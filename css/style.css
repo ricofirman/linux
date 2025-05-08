@@ -222,6 +222,10 @@ html, body {
   background-color: #f0f0f0;
 }
 
+.card:hover .info {
+  display: none;
+}
+
 .card .nama {
   font-weight: bold;
   font-size: 16px;
@@ -240,7 +244,6 @@ html, body {
   opacity: 1;
   transform: translateY(0);
 }
-
 
 .nav{
   position: fixed;
@@ -265,6 +268,7 @@ html, body {
 }
 
 .nav-brand {
+  display: flex;
   justify-content: start;
   justify-items: center;
   margin-right: auto;
