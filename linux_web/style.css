@@ -179,8 +179,20 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+.card .hover-image {
+  opacity: 0;
+  pointer-events: none;
+}
 
+.card:hover .hover-image {
+  opacity: 1;
+}
+
+.card:hover img:not(.hover-image) {
+  opacity: 0;
+}
 .card:hover {
+  
   transform: translateY(-10px);
 }
 
